@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Packetly Support</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0 auto;
+      max-width: 42rem;
+      padding: 2rem 1.25rem 4rem;
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #1c1c1e;
+    }
+    h1 { font-size: 1.75rem; line-height: 1.2; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; }
+    .muted { color: #6e6e73; font-size: 0.95rem; }
+    a { color: #0a7a32; }
+    nav { margin: 1rem 0 2rem; }
+    nav a { margin-right: 1rem; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #000; color: #f2f2f7; }
+      .muted { color: #8e8e93; }
+      a { color: #30d158; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Packetly</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+  <h1>Packetly Support</h1>
+  <p class="muted">Network checks in your pocket</p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions, bug reports, and feature requests go through the public tracker:
+    <a href="https://github.com/agezco/packetly-site/issues">github.com/agezco/packetly-site/issues</a>.
+    Open a new issue and we will reply there — usually within a few business days.
+    A free GitHub account is required to post.
+  </p>
+  <p>Please include iOS version and Packetly version (Settings → tap the version line to copy it).</p>
+
+  <h2>Packetly Pro subscription</h2>
+  <ul>
+    <li>Pro is a <strong>monthly auto-renewable</strong> subscription.</li>
+    <li>Payment is charged to your Apple ID at confirmation of purchase.</li>
+    <li>The subscription renews unless you cancel at least 24 hours before the period ends.</li>
+    <li>Manage or cancel: iOS Settings → [your name] → Subscriptions.</li>
+    <li>Already subscribed on another device: open Packetly → Settings → Restore Purchase.</li>
+    <li>Refunds are handled by Apple: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+  </ul>
+  <p>
+    Terms of Use (Apple Standard EULA):
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/…/stdeula</a>
+  </p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Location</strong> — optional, only to show Wi‑Fi SSID.</li>
+    <li><strong>Local network</strong> — traceroute, ping, and port checks on your LAN.</li>
+    <li><strong>Notifications</strong> — local SSL/domain expiry reminders only (no remote push).</li>
+  </ul>
+
+  <h2>Common issues</h2>
+  <ul>
+    <li><strong>Ping is not ICMP.</strong> Packetly measures TCP connect latency to port 443/80.</li>
+    <li><strong>Some domains have no expiry date.</strong> Not every TLD publishes RDAP.</li>
+    <li><strong>Traceroute shows * for some hops.</strong> Those routers filter ICMP; this is normal.</li>
+  </ul>
+
+</body>
+</html>
